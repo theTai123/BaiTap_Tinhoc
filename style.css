@@ -6,7 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffcc00, #ff0000);
+    background: linear-gradient(to bottom, #B22222, #C62828);
     color: #333;
     line-height: 1.6;
 }
@@ -15,7 +15,7 @@ header {
     text-align: center;
     padding: 80px 20px;
     color: #fff;
-    background: rgba(255, 0, 0, 0.9);
+    background: #F2EAD3;
     position: relative;
     overflow: hidden;
 }
@@ -32,7 +32,7 @@ header p {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #ffcc00;
+    background-color: #D4AF37;
     padding: 10px;
 }
 nav a {
@@ -61,11 +61,11 @@ nav a:hover::after {
     width: 100%;
 }
 nav a:hover {
-    background-color: #37cce3;
+    background-color: #333333;
     transform: scale(1.1);
 }
 .section {
-    padding: 20px;
+    padding: 30px;
     margin: 20px auto;
     background-color: #fff;
     border-radius: 10px;
@@ -76,22 +76,42 @@ nav a:hover {
     text-align: center;
     color: #ff6f00;
 }
-.section img {
+
+.describe {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.section > img {
     display: block;
     margin: 20px auto;
-    max-width: 100%;
+    max-width: 60%;
     border-radius: 10px;
 }
+
 footer {
     text-align: center;
     background-color: #ff0000;
     color: #fff;
     padding: 15px;
 }
+
 footer a {
     color: #ffcc00;
     text-decoration: none;
 }
+
+#table {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+#contact {
+    position: relative;
+}
+
 @keyframes slideInFromTop {
     0% {
         transform: translateY(-100%);
